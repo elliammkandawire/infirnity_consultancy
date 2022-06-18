@@ -9,20 +9,20 @@
     <title><?php echo $company_details->fullname ?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="<?php  base_url() ?>apple-touch-icon.png">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/normalize.css">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/icomoon.css">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/transitions.css">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/owl.carousel.css">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/prettyPhoto.css">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/owl.theme.css">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/main.css">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/color.css">
-    <link rel="stylesheet" href="<?php  base_url() ?>css/responsive.css">
+    <link rel="apple-touch-icon" href="<?php echo base_url() ?>apple-touch-icon.png">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/normalize.css">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/icomoon.css">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/transitions.css">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/owl.carousel.css">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/prettyPhoto.css">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/owl.theme.css">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/main.css">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/color.css">
+    <link rel="stylesheet" href="<?php  echo base_url() ?>css/responsive.css">
     <script src="<?php echo base_url() ?>js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <link rel="icon" type="image/png" href="<?php echo  base_url()?>images/<?php echo $company_details->logo ?>>"/>
+    <link rel="icon" type="image/png" href="<?php echo  base_url()?>images/<?php echo $company_details->logo ?>"/>
 </head>
 <body class="tg-home tg-homeversion">
 <!--[if lt IE 8]>
@@ -83,26 +83,26 @@
                             </div>
                             <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
                                 <ul>
-                                    <li class="tg-active tg-hasdropdown">
+                                    <li class="<?php if($location=="home"){ echo "tg-active";} ?> tg-hasdropdown">
                                         <a href="<?php  echo base_url() ?>">Home</a>
                                     </li>
-                                    <li class="menu-item-has-mega-menu">
-                                        <a href="about">About</a>
+                                    <li class="<?php if($location=="about_us"){ echo "tg-active";} ?> menu-item-has-mega-menu">
+                                        <a href="<?php echo base_url()?>aboutus">About</a>
                                     </li>
-                                    <li>
-                                        <a href="services">Services</a>
+                                    <li class="<?php if($location=="services"){ echo "tg-active";} ?> menu-item-has-mega-menu">
+                                        <a href="<?php echo base_url()?>services">Services</a>
                                     </li>
-                                    <li>
-                                        <a href="projects">Projects</a>
+<!--                                    <li>-->
+<!--                                        <a href="projects">Projects</a>-->
+<!--                                    </li>-->
+                                    <li class="<?php if($location=="team"){ echo "tg-active";} ?> menu-item-has-mega-menu">
+                                        <a href="<?php echo base_url()?>team">team</a>
                                     </li>
-                                    <li>
-                                        <a href="team">team</a>
+                                    <li class="<?php if($location=="news"){ echo "tg-active";} ?> menu-item-has-mega-menu">
+                                        <a href="<?php echo base_url()?>news">news</a>
                                     </li>
-                                    <li>
-                                        <a href="news">news</a>
-                                    </li>
-                                    <li class="tg-hasdropdown">
-                                        <a href="contact"><i class="fa fa-navicon"></i><i>Contact Us</i></a>
+                                    <li class="<?php if($location=="about_us"){ echo "tg-active";} ?> menu-item-has-mega-menu">
+                                        <a href="<?php echo base_url()?>aboutus"><i class="fa fa-navicon"></i><i>Contact Us</i></a>
                                     </li>
                                 </ul>
                             </div>

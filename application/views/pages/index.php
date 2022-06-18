@@ -109,7 +109,8 @@ aliquip ex ea commodo consequat aute irure dolor in sprehen.</p>
 									<h4><a href="#"><?php echo $service->title ?></a></h4>
 								</div>
 								<div class="tg-description">
-									<p><?php echo $service->content ?></p>
+<!--									<p>--><?php //echo $service->content ?><!--</p>-->
+									<p><?php echo substr($service->content, 0, 100);  ?>...</p>
 								</div>
 							</div>
                             <?php endforeach; ?>
@@ -563,21 +564,21 @@ aliquip ex ea commodo consequat aute irure dolor in sprehen.</p>
 							<div class="tg-statistic tg-goals">
 								<span class="icon-Icon1 tg-icon"></span>
 								<div class="tg-namecount">
-									<h2><span class="tg-statistic-count" data-from="0" data-to="1900" data-speed="8000" data-refresh-interval="50">1900+</span></h2>
+									<h2><span class="tg-statistic-count" data-from="0" data-to="10" data-speed="8000" data-refresh-interval="50">1900+</span></h2>
 									<h3>Happy customers</h3>
 								</div>
 							</div>
 							<div class="tg-statistic tg-activeplayers">
 								<span class="icon-Icon2 tg-icon"></span>
 								<div class="tg-namecount">
-									<h2><span class="tg-statistic-count" data-from="0" data-to="967" data-speed="8000" data-refresh-interval="50">967</span></h2>
+									<h2><span class="tg-statistic-count" data-from="0" data-to="20" data-speed="8000" data-refresh-interval="50">967</span></h2>
 									<h3>Successful Deals</h3>
 								</div>
 							</div>
 							<div class="tg-statistic tg-activeteams">
 								<span class="icon-Icon3 tg-icon"></span>
 								<div class="tg-namecount">
-									<h2><span class="tg-statistic-count" data-from="0" data-to="1208" data-speed="8000" data-refresh-interval="50">1208</span></h2>
+									<h2><span class="tg-statistic-count" data-from="0" data-to="10" data-speed="8000" data-refresh-interval="50">1208</span></h2>
 									<h3>awards earned</h3>
 								</div>
 							</div>
@@ -1210,23 +1211,14 @@ aliquip ex ea commodo consequat aute irure dolor in sprehen.</p>
 									<h3>trusted by many</h3>
 								</div>
 								<div class="tg-description">
-									<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									<p>We have worked with the following companies</p>
 								</div>
 							</div>
 						</div>
 						<div id="tg-brandsslider" class="tg-brandsslider tg-brands">
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-01.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-02.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-03.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-04.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-01.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-02.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-03.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-04.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-01.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-02.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-03.png" alt="image description"></a></figure>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/img-04.png" alt="image description"></a></figure>
+                            <?php  foreach ($clients as $client ): ?>
+							<figure class="item tg-brand"><a href="#"><img src="images/brands/<?php echo $client->logo ?>" alt="image description"></a></figure>
+                            <?php endforeach; ?>
 						</div>
 					</div>
 				</div>
