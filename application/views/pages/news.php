@@ -47,16 +47,16 @@
                         <div class="col-md-4 col-sm-6 col-xs-6">
                             <div class="tg-news">
                                 <figure>
-                                    <img src="images/news/img-01.jpg" alt="image description">
+                                    <img style="object-fit: cover; height: 200px;" src="<?php echo base_url() ?>images/news/<?php echo $article->picture ?>" alt="image description">
                                     <figcaption>
                                         <a class="tg-btnplusicon" href="#"><i class="fa fa-link"></i></a>
                                     </figcaption>
                                 </figure>
                                 <div class="tg-newscontent tg-borderstyle">
                                     <ul class="tg-newsmetadata">
-                                        <li><a href="#">June 27, 2016</a></li>
-                                        <li><a href="#">09:00 am</a></li>
-                                        <li><a href="#"><?php echo $article->location ?></a></li>
+                                        <li><a href="#"><?php echo date_format(date_create($article->datetime), "M d Y") ?></a></li>
+                                        <li><a href="#"><?php echo date_format(date_create($article->datetime), "H:i A") ?></a></li>
+                                        <li><a href="#"><?php echo $article->location  ?></a></li>
                                     </ul>
                                     <div class="tg-newstitle">
                                         <h2><a href="<?php echo base_url() ?>news/<?php echo $article->slug ?>"><?php echo $article->title ?></a></h2>

@@ -29,6 +29,8 @@ class News extends CI_Controller {
     public function news_details($slug=null){
         $this->header();
         $this->data["news_details"]=$this->data_model->get_details($this->table,"slug",$slug)[0];
+        $this->data["next"]=!empty($this->data_model->getNextOrPrev($this->table,"slug",$slug,"date","DESC")) ? $this->data_model->getNextOrPrev($this->table,"slug",$slug,"date","DESC")[0]->slug : "";
+        $this->data["prev"]=!empty($this->data_model->getNextOrPrev($this->table,"slug",$slug,"date","DESC")) ? $this->data_model->getNextOrPrev($this->table,"slug",$slug,"date","ASC")[0]->slug : "";
         $this->load->view('pages/header',$this->data);
         $this->load->view('pages/news-detail');
         $this->load->view('pages/footer');

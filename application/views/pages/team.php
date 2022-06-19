@@ -46,11 +46,11 @@
 							<div class="col-md-3 col-sm-6 col-xs-6">
 								<div class="tg-member">
 									<figure>
-										<img src="images/team/<?php echo $team->picture ?>" alt="image description">
+										<img src="<?php echo base_url(); ?>images/team/<?php echo $team->picture ?>" alt="image">
 										<figcaption>
 											<ul class="tg-socialprofilelinks">
-												<li><a href="<?php echo $team->twitter_link ?>"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="<?php echo $team->facebook_link ?>"><i class="fa fa-facebook"></i></a></li>
+												<li><a target="_blank" href="<?php echo $team->twitter_link ?>"><i class="fa fa-twitter"></i></a></li>
+												<li><a target="_blank" href="<?php echo $team->facebook_link ?>"><i class="fa fa-facebook"></i></a></li>
 											</ul>
 										</figcaption>
 									</figure>

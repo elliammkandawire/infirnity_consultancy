@@ -56,62 +56,15 @@
 													<i class="<?php  echo $service->icon ?>"></i>
 												</span>
 												<div class="tg-heading">
-													<h4><a href="#"><?php echo $service->title ?></a></h4>
+													<h4><a href="<?php echo base_url() ?>services/<?php echo $service->slug ?>"><?php echo $service->title ?></a></h4>
 												</div>
 												<div class="tg-description">
-													<p><?php echo $service->content ?></p>
+													<p><?php echo $service->short_description ?></p>
 												</div>
 											</div>
 										</div>
 									</div>
                                     <?php endforeach; ?>
-
-
-									<div class="col-sm-6">
-										<div class="tg-box">
-											<div class="tg-service">
-												<span class="tg-seviceicon">
-													<i class="fa fa-line-chart"></i>
-												</span>
-												<div class="tg-heading">
-													<h4><a href="#">Future planning</a></h4>
-												</div>
-												<div class="tg-description">
-													<p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="tg-box">
-											<div class="tg-service">
-												<span class="tg-seviceicon">
-													<i class="fa fa-trophy"></i>
-												</span>
-												<div class="tg-heading">
-													<h4><a href="#">Future planning</a></h4>
-												</div>
-												<div class="tg-description">
-													<p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="tg-box">
-											<div class="tg-service">
-												<span class="tg-seviceicon">
-													<i class="fa fa-flag-o"></i>
-												</span>
-												<div class="tg-heading">
-													<h4><a href="#">Future planning</a></h4>
-												</div>
-												<div class="tg-description">
-													<p>Consectetur adipisicing elit sed doid apor incididunt labore</p>
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>

@@ -14,12 +14,11 @@
 								<h2>guaranteed</h2>
 								<img class="tg-svginject" src="images/img-01.svg" alt="image description">
 								<div class="tg-description">
-									<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam quis nostrud exercitation laboris nisi
-aliquip ex ea commodo consequat aute irure dolor in sprehen.</p>
+									<p><?php echo $company_details->mission ?></p>
 								</div>
 								<div class="tg-btnsbox">
-									<a class="tg-btn" href="#"><span>Read more</span></a>
-									<a class="tg-btn" href="#"><span>buy now</span></a>
+									<a class="tg-btn" href="<?php echo base_url() ?>/aboutus"><span>Read more</span></a>
+									<a class="tg-btn" href="<?php echo base_url() ?>/services"><span>View Services</span></a>
 								</div>
 							</div>
 						</div>
@@ -38,12 +37,11 @@ aliquip ex ea commodo consequat aute irure dolor in sprehen.</p>
 								<h2>guaranteed</h2>
 								<img class="tg-svginject" src="images/img-01.svg" alt="image description">
 								<div class="tg-description">
-									<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam quis nostrud exercitation laboris nisi
-aliquip ex ea commodo consequat aute irure dolor in sprehen.</p>
+									<p><?php echo $company_details->vision ?></p>
 								</div>
 								<div class="tg-btnsbox">
-									<a class="tg-btn" href="#"><span>Read more</span></a>
-									<a class="tg-btn" href="#"><span>buy now</span></a>
+                                    <a class="tg-btn" href="<?php echo base_url() ?>/aboutus"><span>Read more</span></a>
+                                    <a class="tg-btn" href="<?php echo base_url() ?>/services"><span>View Services</span></a>
 								</div>
 							</div>
 						</div>
@@ -60,12 +58,11 @@ aliquip ex ea commodo consequat aute irure dolor in sprehen.</p>
 								<h2>guaranteed</h2>
 								<img class="tg-svginject" src="images/img-01.svg" alt="image description">
 								<div class="tg-description">
-									<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam quis nostrud exercitation laboris nisi
-aliquip ex ea commodo consequat aute irure dolor in sprehen.</p>
+									<p><?php echo $company_details->mission ?></p>
 								</div>
 								<div class="tg-btnsbox">
-									<a class="tg-btn" href="#"><span>Read more</span></a>
-									<a class="tg-btn" href="#"><span>buy now</span></a>
+                                    <a class="tg-btn" href="<?php echo base_url() ?>/aboutus"><span>Read more</span></a>
+                                    <a class="tg-btn" href="<?php echo base_url() ?>/services"><span>View Services</span></a>
 								</div>
 							</div>
 						</div>
@@ -106,11 +103,11 @@ aliquip ex ea commodo consequat aute irure dolor in sprehen.</p>
 									<i class="<?php  echo $service->icon ?>"></i>
 								</span>
 								<div class="tg-heading">
-									<h4><a href="#"><?php echo $service->title ?></a></h4>
+									<h4><a href="<?php echo base_url() ?>services/<?php echo $service->slug ?>"><?php echo $service->title ?></a></h4>
 								</div>
 								<div class="tg-description">
 <!--									<p>--><?php //echo $service->content ?><!--</p>-->
-									<p><?php echo substr($service->content, 0, 100);  ?>...</p>
+									<p><?php echo substr($service->short_description, 0, 100);  ?>...</p>
 								</div>
 							</div>
                             <?php endforeach; ?>
@@ -1033,7 +1030,7 @@ aliquip ex ea commodo consequat aute irure dolor in sprehen.</p>
 											<h3>request a call back</h3>
 										</div>
 										<div class="tg-description">
-											<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+											<p>Give us a call back or message in the message box below so that we discuss business terms and help your business take a spring forward</p>
 										</div>
 									</div>
 									<form id="tg-formtheme" class="tg-formtheme" action="#" enctype="text/plain">

@@ -34,10 +34,10 @@
 						<div class="col-sm-12 col-xs-12">
 							<div class="tg-twocolumns">
 								<div class="tg-postbuttons">
-									<a class="tg-btn tg-prevpost" href="#"><span>prev post</span></a>
-									<a class="tg-btn tg-nextpost" href="#"><span>next post</span></a>
+                                    <a class="tg-btn tg-prevpost" href="<?php echo base_url() ?>news/<?php echo $prev ?>"><span>prev post</span></a>
+                                    <a class="tg-btn tg-nextpost" href="<?php echo base_url() ?>news/<?php echo $next ?>"><span>next post</span></a>
 								</div>
-								<figure class="tg-newsimg"><img src="<?php echo base_url() ?>images/news/<?php  echo $news_details->picture ?>" alt="image description"></figure>
+								<figure class="tg-newsimg"><img  style="object-fit: cover; height: 400px;" src="<?php echo base_url() ?>images/news/<?php  echo $news_details->picture ?>" alt="image description"></figure>
 								<div class="row">
 									<div class="col-lg-9 col-sm-7 col-xs-12 pull-right">
 										<div id="tg-content" class="tg-content">
@@ -57,10 +57,10 @@
 													<div class="tg-tags">
 														<i class="fa fa-tags"></i>
 														<strong>tags: </strong>
-														<a href="#">fashion</a>
-														<a href="#">travel</a>
-														<a href="#">tech</a>
-														<a href="#">sports</a>
+														<a href="#">SPSS</a>
+														<a href="#">Stata</a>
+														<a href="#">Finance</a>
+														<a href="#">Agriculture</a>
 													</div>
 													<div class="tg-socialshare">
 														<i class="fa fa-share-square-o"></i>
@@ -173,7 +173,7 @@
 												<div class="tg-widgetcontent">
 													<ul>
                                                         <?php  foreach ($services as $service): ?>
-														<li><a href="#"><?php echo $service->title ?></a></li>
+														<li><a href="<?php echo base_url() ?>services/<?php echo $service->slug ?>"><?php echo $service->title ?></a></li>
                                                         <?php endforeach; ?>
 													</ul>
 												</div>

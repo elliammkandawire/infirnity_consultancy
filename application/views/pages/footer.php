@@ -84,12 +84,12 @@
                                 <li>
                                     <time datetime=""><a href="#"><span>04</span> Feb</a></time>
                                     <div class="tg-posdata">
-                                        <h4><a href="#"><?php echo $article->title ?></a></h4>
+                                        <h4><a href="<?php echo base_url() ?>news/<?php echo $article->slug ?>"><?php echo $article->title ?></a></h4>
                                         <ul class="tg-postmetadata">
                                             <li>
                                                 <a href="#">
                                                     <i class="fa fa-clock-o"></i>
-                                                    <span>24 Min Ago</span>
+                                                    <span><?php echo date_format(date_create($article->datetime), "M d Y H:m A") ?></span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -120,7 +120,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-xs-12">
-                    <span class="tg-copyright">&copy; 2016 | All Rights Reserved</span>
+                    <span class="tg-copyright">&copy; <?php echo date("Y") ?> | All Rights Reserved. <?php echo ucwords(strtolower($company_details->shortname)) ?></span>
                     <ul class="tg-socialicons">
 <!--                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -128,7 +128,7 @@
 <!--                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>-->
 <!--                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
                     </ul>
-                    <strong class="tg-logo"><a href="#"><img src="images/<?php echo $company_details->logo ?>" alt="image description"></a></strong>
+<!--                    <strong class="tg-logo"><a href="#"><img src="images/--><?php ////echo $company_details->logo ?><!--"></a></strong>-->
                 </div>
             </div>
         </div>

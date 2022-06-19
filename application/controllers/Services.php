@@ -24,4 +24,22 @@ class Services extends CI_Controller {
         $this->data["news"]=$this->data_model->readData("news");
         $this->data["location"]="services";
     }
+
+    public function details($slug=null){
+        $this->header();
+        $this->data["service_details"]=$this->data_model->get_details($this->table,"slug",$slug)[0];
+        //getNextOrPrev($table_name,$column_name, $column_value,$order_by, $order_value)
+
+        try{
+            $this->data["next"]=!empty($this->data_model->getNextOrPrev($this->table,"slug",$slug,"date","DESC")) ? $this->data_model->getNextOrPrev($this->table,"slug",$slug,"date","DESC")[0]->slug : "";
+            $this->data["prev"]=!empty($this->data_model->getNextOrPrev($this->table,"slug",$slug,"date","DESC")) ? $this->data_model->getNextOrPrev($this->table,"slug",$slug,"date","ASC")[0]->slug : "";
+        }catch(Exception $e){
+
+        }
+         //$this->data["prev"]=$this->data_model->getNextOrPrev($this->table,"slug",$slug,"date","ASC")[0]->slug;
+
+        $this->load->view('pages/header',$this->data);
+        $this->load->view('pages/service-detail');
+        $this->load->view('pages/footer');
+    }
 }
