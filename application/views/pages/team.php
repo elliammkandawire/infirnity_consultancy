@@ -46,7 +46,7 @@
 							<div class="col-md-3 col-sm-6 col-xs-6">
 								<div class="tg-member">
 									<figure>
-										<img src="<?php echo base_url(); ?>images/team/<?php echo $team->picture ?>" alt="image">
+										<img style="object-fit: cover; height: 400px;" src="<?php echo base_url(); ?>images/team/<?php echo $team->picture ?>" alt="image">
 										<figcaption>
 											<ul class="tg-socialprofilelinks">
 												<li><a target="_blank" href="<?php echo $team->twitter_link ?>"><i class="fa fa-twitter"></i></a></li>

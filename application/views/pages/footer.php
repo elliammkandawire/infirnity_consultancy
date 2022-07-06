@@ -128,7 +128,7 @@
 <!--                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>-->
 <!--                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
                     </ul>
-<!--                    <strong class="tg-logo"><a href="#"><img src="images/--><?php ////echo $company_details->logo ?><!--"></a></strong>-->
+                    <strong class="tg-logo"><a href="#"><img style="object-fit: cover; height: 50px;"  src="images/<?php echo $company_details->logo ?>"></a></strong>
                 </div>
             </div>
         </div>

@@ -70,7 +70,8 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <strong class="tg-logo">
-                            <a href="<?php echo base_url() ?>"><img src="images/<?php //echo $company_details->logo  ?>" alt="<?php echo $company_details->shortname ?>"></a>
+<!--                            <a href="--><?php //echo base_url() ?><!--"><img src="images/--><?php ////echo $company_details->logo  ?><!--" alt="--><?php ////echo $company_details->shortname ?><!--"> --><?php //echo $company_details->shortname ?><!--</a>-->
+                            <a href="<?php echo base_url() ?>"><?php echo $company_details->shortname ?></a>
                         </strong>
                         <nav id="tg-nav" class="tg-nav">
                             <div class="navbar-header">

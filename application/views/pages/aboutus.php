@@ -108,7 +108,7 @@
                             <?php  foreach ($teams as $team): ?>
 							<div class="item tg-member">
 								<figure>
-									<img src="images/team/<?php echo $team->picture ?>" alt="image description">
+									<img style="object-fit: cover; height: 400px;" src="<?php echo base_url()?>images/team/<?php echo $team->picture ?>" alt="image description">
 									<figcaption>
 										<ul class="tg-socialprofilelinks">
                                             <li><a href="<?php echo $team->twitter_link ?>"><i class="fa fa-twitter"></i></a></li>

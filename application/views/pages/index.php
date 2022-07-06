@@ -3,18 +3,18 @@
 		*************************************-->
 		<div id="tg-homeslider" class="tg-homeslider tg-haslayout">
 
-
+          <?php  foreach ($slider as $slider_item): ?>
 			<figure class="item">
-				<img src="images/slider/img-01.jpg" alt="image description">
+				<img src="<?php  echo base_url() ?>images/slider/<?php echo $slider_item->picture ?>" alt="image description">
 				<figcaption>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-7 col-sm-10 col-xs-12 pull-right">
-								<h1>Five star service</h1>
+								<h1><?php echo $slider_item->title ?></h1>
 								<h2>guaranteed</h2>
-								<img class="tg-svginject" src="images/img-01.svg" alt="image description">
+								<img class="tg-svginject" src="<?php  echo base_url() ?>images/slider/<?php echo $slider_item->picture ?>" alt="image description">
 								<div class="tg-description">
-									<p><?php echo $company_details->mission ?></p>
+									<p><?php echo $slider_item->description ?></p>
 								</div>
 								<div class="tg-btnsbox">
 									<a class="tg-btn" href="<?php echo base_url() ?>/aboutus"><span>Read more</span></a>
@@ -25,50 +25,51 @@
 					</div>
 				</figcaption>
 			</figure>
+            <?php endforeach; ?>
 
 
-			<figure class="item">
-				<img src="images/slider/img-01.jpg" alt="image description">
-				<figcaption>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-7 col-sm-10 col-xs-12 pull-right">
-								<h1>Five star service</h1>
-								<h2>guaranteed</h2>
-								<img class="tg-svginject" src="images/img-01.svg" alt="image description">
-								<div class="tg-description">
-									<p><?php echo $company_details->vision ?></p>
-								</div>
-								<div class="tg-btnsbox">
-                                    <a class="tg-btn" href="<?php echo base_url() ?>/aboutus"><span>Read more</span></a>
-                                    <a class="tg-btn" href="<?php echo base_url() ?>/services"><span>View Services</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</figcaption>
-			</figure>
-			<figure class="item">
-				<img src="images/slider/img-01.jpg" alt="image description">
-				<figcaption>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-7 col-sm-10 col-xs-12 pull-right">
-								<h1>Five star service</h1>
-								<h2>guaranteed</h2>
-								<img class="tg-svginject" src="images/img-01.svg" alt="image description">
-								<div class="tg-description">
-									<p><?php echo $company_details->mission ?></p>
-								</div>
-								<div class="tg-btnsbox">
-                                    <a class="tg-btn" href="<?php echo base_url() ?>/aboutus"><span>Read more</span></a>
-                                    <a class="tg-btn" href="<?php echo base_url() ?>/services"><span>View Services</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</figcaption>
-			</figure>
+<!--			<figure class="item">-->
+<!--				<img src="images/slider/img-01.jpg" alt="image description">-->
+<!--				<figcaption>-->
+<!--					<div class="container">-->
+<!--						<div class="row">-->
+<!--							<div class="col-md-7 col-sm-10 col-xs-12 pull-right">-->
+<!--								<h1>Five star service</h1>-->
+<!--								<h2>guaranteed</h2>-->
+<!--								<img class="tg-svginject" src="images/img-01.svg" alt="image description">-->
+<!--								<div class="tg-description">-->
+<!--									<p>--><?php //echo $company_details->vision ?><!--</p>-->
+<!--								</div>-->
+<!--								<div class="tg-btnsbox">-->
+<!--                                    <a class="tg-btn" href="--><?php //echo base_url() ?><!--/aboutus"><span>Read more</span></a>-->
+<!--                                    <a class="tg-btn" href="--><?php //echo base_url() ?><!--/services"><span>View Services</span></a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</figcaption>-->
+<!--			</figure>-->
+<!--			<figure class="item">-->
+<!--				<img src="images/slider/img-01.jpg" alt="image description">-->
+<!--				<figcaption>-->
+<!--					<div class="container">-->
+<!--						<div class="row">-->
+<!--							<div class="col-md-7 col-sm-10 col-xs-12 pull-right">-->
+<!--								<h1>Five star service</h1>-->
+<!--								<h2>guaranteed</h2>-->
+<!--								<img class="tg-svginject" src="images/img-01.svg" alt="image description">-->
+<!--								<div class="tg-description">-->
+<!--									<p>--><?php //echo $company_details->mission ?><!--</p>-->
+<!--								</div>-->
+<!--								<div class="tg-btnsbox">-->
+<!--                                    <a class="tg-btn" href="--><?php //echo base_url() ?><!--/aboutus"><span>Read more</span></a>-->
+<!--                                    <a class="tg-btn" href="--><?php //echo base_url() ?><!--/services"><span>View Services</span></a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</figcaption>-->
+<!--			</figure>-->
 		</div>
 		<!--************************************
 				Home Slider End
@@ -554,28 +555,28 @@
 			<!--************************************
 					Statistics Start
 			*************************************-->
-			<section class="tg-haslayout tg-parallax-window" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/parallax/bgparallax-01.jpg">
+			<section class="tg-haslayout tg-parallax-window" data-appear-top-offset="600" data-parallax="scroll" data-image-src="<?php //echo base_url() ?>images/parallaxs/<?php echo $basic_statistics->picture ?>">
 				<div class="container">
 					<div class="row">
 						<div class="tg-statistics">
 							<div class="tg-statistic tg-goals">
 								<span class="icon-Icon1 tg-icon"></span>
 								<div class="tg-namecount">
-									<h2><span class="tg-statistic-count" data-from="0" data-to="10" data-speed="8000" data-refresh-interval="50">1900+</span></h2>
+									<h2><span class="tg-statistic-count" data-from="0" data-to="<?php echo $basic_statistics->happy_customer ?>" data-speed="8000" data-refresh-interval="50">1900+</span></h2>
 									<h3>Happy customers</h3>
 								</div>
 							</div>
 							<div class="tg-statistic tg-activeplayers">
 								<span class="icon-Icon2 tg-icon"></span>
 								<div class="tg-namecount">
-									<h2><span class="tg-statistic-count" data-from="0" data-to="20" data-speed="8000" data-refresh-interval="50">967</span></h2>
+									<h2><span class="tg-statistic-count" data-from="0" data-to="<?php echo $basic_statistics->successful_deals ?>" data-speed="8000" data-refresh-interval="50">967</span></h2>
 									<h3>Successful Deals</h3>
 								</div>
 							</div>
 							<div class="tg-statistic tg-activeteams">
 								<span class="icon-Icon3 tg-icon"></span>
 								<div class="tg-namecount">
-									<h2><span class="tg-statistic-count" data-from="0" data-to="10" data-speed="8000" data-refresh-interval="50">1208</span></h2>
+									<h2><span class="tg-statistic-count" data-from="0" data-to="<?php echo $basic_statistics->awards ?>" data-speed="8000" data-refresh-interval="50">1208</span></h2>
 									<h3>awards earned</h3>
 								</div>
 							</div>
@@ -1019,7 +1020,7 @@
 						<div class="tg-requestcallback">
 							<div class="col-sm-3 hidden-xs">
 								<figure>
-									<img src="images/img-02.png" alt="image description">
+									<img src="<?php echo base_url() ?>images/<?php  echo $basic_statistics->picture ?>" alt="image description">
 								</figure>
 							</div>
 							<div class="col-sm-9 col-xs-12">
