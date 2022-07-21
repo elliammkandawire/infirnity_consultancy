@@ -5,7 +5,7 @@
 
           <?php  foreach ($slider as $slider_item): ?>
 			<figure class="item">
-				<img src="<?php  echo base_url() ?>images/slider/<?php echo $slider_item->picture ?>" alt="image description">
+				<img style="height: 550px; width: 100%;object-fit: cover; " src="<?php  echo base_url() ?>images/slider/<?php echo $slider_item->picture ?>" alt="image description">
 				<figcaption>
 					<div class="container">
 						<div class="row">
@@ -80,136 +80,68 @@
 				Main Start
 		*************************************-->
 		<main id="tg-main" class="tg-main tg-haslayout">
-			<!--************************************
-					What We Offers Start
-			*************************************-->
-			<section class="tg-main-section tg-haslayout">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12">
-							<div class="tg-sectionhead">
-								<div class="tg-sectiontitle">
-									<h2>our services</h2>
-									<h3>What We Offer</h3>
-								</div>
-								<div class="tg-description">
-									<p>We are made up of a team that is dedicated to work. We offer services that have impact to your organisation. Below is a list of </p>
-								</div>
-							</div>
-						</div>
-						<div id="tg-servicesslider" class="tg-servicesslider tg-services">
-                            <?php foreach($services as $service): ?>
-							<div class="item tg-service">
-								<span class="tg-seviceicon">
-									<i class="<?php  echo $service->icon ?>"></i>
-								</span>
-								<div class="tg-heading">
-									<h4><a href="<?php echo base_url() ?>services/<?php echo $service->slug ?>"><?php echo $service->title ?></a></h4>
-								</div>
-								<div class="tg-description">
-<!--									<p>--><?php //echo $service->content ?><!--</p>-->
-									<p><?php echo substr($service->short_description, 0, 100);  ?>...</p>
-								</div>
-							</div>
-                            <?php endforeach; ?>
-
-<!--							<div class="item tg-service">-->
-<!--								<span class="tg-seviceicon">-->
-<!--									<i class="fa fa-line-chart"></i>-->
-<!--								</span>-->
-<!--								<div class="tg-heading">-->
-<!--									<h4><a href="#">Financial planning</a></h4>-->
-<!--								</div>-->
-<!--								<div class="tg-description">-->
-<!--									<p>Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore magna aliqua.</p>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--                            -->
-<!--                            -->
-<!--							<div class="item tg-service">-->
-<!--								<span class="tg-seviceicon">-->
-<!--									<i class="fa fa-trophy"></i>-->
-<!--								</span>-->
-<!--								<div class="tg-heading">-->
-<!--									<h4><a href="#">investment banking</a></h4>-->
-<!--								</div>-->
-<!--								<div class="tg-description">-->
-<!--									<p>Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore magna aliqua.</p>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							<div class="item tg-service">-->
-<!--								<span class="tg-seviceicon">-->
-<!--									<i class="fa fa-balance-scale"></i>-->
-<!--								</span>-->
-<!--								<div class="tg-heading">-->
-<!--									<h4><a href="#">Wealth management</a></h4>-->
-<!--								</div>-->
-<!--								<div class="tg-description">-->
-<!--									<p>Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore magna aliqua.</p>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							<div class="item tg-service">-->
-<!--								<span class="tg-seviceicon">-->
-<!--									<i class="fa fa-line-chart"></i>-->
-<!--								</span>-->
-<!--								<div class="tg-heading">-->
-<!--									<h4><a href="#">Financial planning</a></h4>-->
-<!--								</div>-->
-<!--								<div class="tg-description">-->
-<!--									<p>Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore magna aliqua.</p>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							<div class="item tg-service">-->
-<!--								<span class="tg-seviceicon">-->
-<!--									<i class="fa fa-trophy"></i>-->
-<!--								</span>-->
-<!--								<div class="tg-heading">-->
-<!--									<h4><a href="#">investment banking</a></h4>-->
-<!--								</div>-->
-<!--								<div class="tg-description">-->
-<!--									<p>Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore magna aliqua.</p>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							<div class="item tg-service">-->
-<!--								<span class="tg-seviceicon">-->
-<!--									<i class="fa fa-balance-scale"></i>-->
-<!--								</span>-->
-<!--								<div class="tg-heading">-->
-<!--									<h4><a href="#">Wealth management</a></h4>-->
-<!--								</div>-->
-<!--								<div class="tg-description">-->
-<!--									<p>Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore magna aliqua.</p>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							<div class="item tg-service">-->
-<!--								<span class="tg-seviceicon">-->
-<!--									<i class="fa fa-line-chart"></i>-->
-<!--								</span>-->
-<!--								<div class="tg-heading">-->
-<!--									<h4><a href="#">Financial planning</a></h4>-->
-<!--								</div>-->
-<!--								<div class="tg-description">-->
-<!--									<p>Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore magna aliqua.</p>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							<div class="item tg-service">-->
-<!--								<span class="tg-seviceicon">-->
-<!--									<i class="fa fa-trophy"></i>-->
-<!--								</span>-->
-<!--								<div class="tg-heading">-->
-<!--									<h4><a href="#">investment banking</a></h4>-->
-<!--								</div>-->
-<!--								<div class="tg-description">-->
-<!--									<p>Consectetur adipisicing elit sed doid apor incididunt ut labore et dolore magna aliqua.</p>-->
-<!--								</div>-->
-<!--							</div>-->
-						</div>
-					</div>
-				</div>
-			</section>
-			<!--************************************
-					What We Offers End
-			*************************************-->
+                <!--************************************
+                        What We Offers Start
+                *************************************-->
+                <section class="tg-main-section tg-haslayout">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tg-whatwedo">
+                                <div class="col-sm-6">
+                                    <div class="tg-sectionhead">
+                                        <div class="tg-sectiontitle">
+                                            <h2>who we are</h2>
+                                            <h3>what we do</h3>
+                                        </div>
+                                        <div class="tg-description">
+                                            <p><?php echo $company_details->background ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul>
+                                        <li>
+										<span class="tg-whatwedoicon">
+											<i class="fa fa-bell-o"></i>
+										</span>
+                                            <div class="tg-whatwedocontent">
+                                                <h4><a href="#">Our Mission</a></h4>
+                                                <div class="tg-description">
+                                                    <p><?php echo $company_details->mission ?></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+										<span class="tg-whatwedoicon">
+											<i class="fa fa-comments-o"></i>
+										</span>
+                                            <div class="tg-whatwedocontent">
+                                                <h4><a href="#">Our Vision</a></h4>
+                                                <div class="tg-description">
+                                                    <p><?php echo $company_details->vision ?></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+										<span class="tg-whatwedoicon">
+											<i class="fa fa-flag-o"></i>
+										</span>
+                                            <div class="tg-whatwedocontent">
+                                                <h4><a href="#">Core Values</a></h4>
+                                                <div class="tg-description">
+                                                    <p><?php echo $company_details->core_values ?></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--************************************
+                        What We Offers End
+                *************************************-->
 
 
 
@@ -1186,8 +1118,8 @@
 					<div class="row">
 						<div class="col-sm-12 col-xs-12">
 							<div class="tg-getadvice">
-								<a class="tg-btn" href="#"><span>Get Advice</span></a>
-								<p>Contact us for information or any queries related to <strong>financial investments</strong></p>
+								<a class="tg-btn" href="tel:<?php echo $company_details->cell ?>"><span>Get Advice</span></a>
+								<p>Contact us for information or any queries related to <strong>our services</strong></p>
 							</div>
 						</div>
 					</div>
@@ -1199,28 +1131,28 @@
 			<!--************************************
 					Trusted by Many Start
 			*************************************-->
-			<section class="tg-main-section tg-haslayout">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12">
-							<div class="tg-sectionhead">
-								<div class="tg-sectiontitle">
-									<h2>we are</h2>
-									<h3>trusted by many</h3>
-								</div>
-								<div class="tg-description">
-									<p>We have worked with the following companies</p>
-								</div>
-							</div>
-						</div>
-						<div id="tg-brandsslider" class="tg-brandsslider tg-brands">
-                            <?php  foreach ($clients as $client ): ?>
-							<figure class="item tg-brand"><a href="#"><img src="images/brands/<?php echo $client->logo ?>" alt="image description"></a></figure>
-                            <?php endforeach; ?>
-						</div>
-					</div>
-				</div>
-			</section>
+<!--			<section class="tg-main-section tg-haslayout">-->
+<!--				<div class="container">-->
+<!--					<div class="row">-->
+<!--						<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12">-->
+<!--							<div class="tg-sectionhead">-->
+<!--								<div class="tg-sectiontitle">-->
+<!--									<h2>we are</h2>-->
+<!--									<h3>trusted by many</h3>-->
+<!--								</div>-->
+<!--								<div class="tg-description">-->
+<!--									<p>We have worked with the following companies</p>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div id="tg-brandsslider" class="tg-brandsslider tg-brands">-->
+<!--                            --><?php // foreach ($clients as $client ): ?>
+<!--							<figure class="item tg-brand"><a href="#"><img src="images/brands/--><?php //echo $client->logo ?><!--" alt="image description"></a></figure>-->
+<!--                            --><?php //endforeach; ?>
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</section>-->
 			<!--************************************
 					Trusted by Many End
 			*************************************-->

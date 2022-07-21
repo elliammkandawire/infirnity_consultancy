@@ -121,7 +121,7 @@
 										<h4><a href="#"><?php  echo $team->fullname ?></a></h4>
 									</div>
 									<div class="tg-memberdesignation">
-										<span><a href="#"><?php  echo $team->profession  ?></a></span>
+										<span><a href="#"><?php  echo $team->position  ?></a></span>
 									</div>
 								</div>
 							</div>
@@ -141,8 +141,8 @@
 					<div class="row">
 						<div class="col-sm-12 col-xs-12">
 							<div class="tg-getadvice">
-								<a class="tg-btn" href="#"><span>Get Advice</span></a>
-								<p>Contact us for information or any queries related to <strong>financial investments</strong></p>
+								<a class="tg-btn" href="tel:<?php echo $company_details->cell ?>"><span>Get Advice</span></a>
+								<p>Contact us for information or any queries related to <strong>our services</strong></p>
 							</div>
 						</div>
 					</div>
@@ -154,28 +154,28 @@
 			<!--************************************
 					Trusted by Many Start
 			*************************************-->
-			<section class="tg-main-section tg-haslayout">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12">
-							<div class="tg-sectionhead">
-								<div class="tg-sectiontitle">
-									<h2>we are</h2>
-									<h3>trusted by many</h3>
-								</div>
-								<div class="tg-description">
-									<p>We have worked with the following companies</p>
-								</div>
-							</div>
-						</div>
-						<div id="tg-brandsslider" class="tg-brandsslider tg-brands">
-                            <?php  foreach ($clients as $client ): ?>
-                                <figure class="item tg-brand"><a href="#"><img src="images/brands/<?php echo $client->logo ?>" alt="image description"></a></figure>
-                            <?php endforeach; ?>
-						</div>
-					</div>
-				</div>
-			</section>
+<!--			<section class="tg-main-section tg-haslayout">-->
+<!--				<div class="container">-->
+<!--					<div class="row">-->
+<!--						<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-sm-offset-0 col-sm-12 col-xs-12">-->
+<!--							<div class="tg-sectionhead">-->
+<!--								<div class="tg-sectiontitle">-->
+<!--									<h2>we are</h2>-->
+<!--									<h3>trusted by many</h3>-->
+<!--								</div>-->
+<!--								<div class="tg-description">-->
+<!--									<p>We have worked with the following companies</p>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div id="tg-brandsslider" class="tg-brandsslider tg-brands">-->
+<!--                            --><?php // foreach ($clients as $client ): ?>
+<!--                                <figure class="item tg-brand"><a href="#"><img src="images/brands/--><?php //echo $client->logo ?><!--" alt="image description"></a></figure>-->
+<!--                            --><?php //endforeach; ?>
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</section>-->
 			<!--************************************
 					Trusted by Many End
 			*************************************-->

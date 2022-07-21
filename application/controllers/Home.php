@@ -37,6 +37,7 @@ class Home extends CI_Controller {
         $data=array(
             "shortname"=>$this->input->post("shortname"),
             "fullname"=>$this->input->post("fullname"),
+            "location"=>$this->input->post("location"),
             "background"=>nl2br($this->input->post("background")),
             "email"=>$this->input->post("email"),
             "cell"=>$this->input->post("phone"),

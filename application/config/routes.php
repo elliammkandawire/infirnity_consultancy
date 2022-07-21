@@ -59,6 +59,7 @@ $route['logout'] = 'user/logout';
 
 $route['news_admin'] = 'news/admin';
 $route['statistics'] = 'Basic_sta';
+$route['contactus'] = 'ContactUs';
 $route['team_admin'] = 'team/admin';
 $route['services_admin'] = 'services/admin';
 

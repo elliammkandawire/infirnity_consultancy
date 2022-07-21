@@ -59,7 +59,7 @@
 											<h4><a href="#"><?php  echo $team->fullname ?></a></h4>
 										</div>
 										<div class="tg-memberdesignation">
-											<span><a href="#"><?php  echo $team->profession  ?></a></span>
+											<span><a href="#"><?php  echo $team->position  ?></a></span>
 										</div>
 									</div>
 								</div>

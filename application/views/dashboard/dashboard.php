@@ -66,6 +66,11 @@
 		            <label for="recipient-name" class="col-form-label">Company Name:</label>
 		            <input type="text" class="form-control" value="<?php echo $data->fullname ?>" name="fullname" required="" placeholder="Company Full Name">
 		          </div>
+
+                 <div class="form-group">
+                     <label for="message-text" class="col-form-label">Physical Location</label>
+                     <input type="text" class="form-control" value="<?php echo $data->location ?>" name="location" placeholder="Company Location" required="">
+                 </div>
 				 <div class="form-group">
 					 <label for="message-text" class="col-form-label">Company Email</label>
 					 <input type="email" class="form-control" value="<?php echo $data->email ?>" name="email" placeholder="Company Email" required="">

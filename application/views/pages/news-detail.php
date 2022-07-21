@@ -60,7 +60,7 @@
 														<a href="#">SPSS</a>
 														<a href="#">Stata</a>
 														<a href="#">Finance</a>
-														<a href="#">Agriculture</a>
+<!--														<a href="#">Agriculture</a>-->
 													</div>
 													<div class="tg-socialshare">
 														<i class="fa fa-share-square-o"></i>

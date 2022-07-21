@@ -23,6 +23,13 @@
     <link rel="stylesheet" href="<?php  echo base_url() ?>css/responsive.css">
     <script src="<?php echo base_url() ?>js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <link rel="icon" type="image/png" href="<?php echo  base_url()?>images/<?php echo $company_details->logo ?>"/>
+    <style>
+        @media (max-width: 767px) {
+            .item {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body class="tg-home tg-homeversion">
 <!--[if lt IE 8]>
@@ -102,8 +109,12 @@
                                     <li class="<?php if($location=="news"){ echo "tg-active";} ?> menu-item-has-mega-menu">
                                         <a href="<?php echo base_url()?>news">news</a>
                                     </li>
+
+                                    <li class="<?php if($location=="contactus"){ echo "tg-active";} ?> menu-item-has-mega-menu">
+                                        <a href="<?php echo base_url()?>contactus">Contact Us</a>
+                                    </li>
                                     <li class="<?php if($location=="about_us"){ echo "tg-active";} ?> menu-item-has-mega-menu">
-                                        <a href="<?php echo base_url()?>aboutus"><i class="fa fa-navicon"></i><i>Contact Us</i></a>
+                                        <a href="<?php echo base_url()?>contactus"><i class="fa fa-navicon"></i><i>Contact Us</i></a>
                                     </li>
                                 </ul>
                             </div>
