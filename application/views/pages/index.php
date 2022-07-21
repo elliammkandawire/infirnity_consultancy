@@ -13,7 +13,7 @@
 								<h1><?php echo $slider_item->title ?></h1>
 								<h2>guaranteed</h2>
 								<img class="tg-svginject" src="<?php  echo base_url() ?>images/slider/<?php echo $slider_item->picture ?>" alt="image description">
-								<div class="tg-description">
+								<div class="tg-description" style="color: whitesmoke">
 									<p><?php echo $slider_item->description ?></p>
 								</div>
 								<div class="tg-btnsbox">
