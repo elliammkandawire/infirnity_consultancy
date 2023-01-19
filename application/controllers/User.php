@@ -35,6 +35,8 @@ class User extends CI_Controller {
 
 		$email = $_POST['email'];
 		$password = sha1($_POST['password']);
+        $this->load->library('form_validation');
+
 
 
 		$data = $this->users_model->login($email, $password);

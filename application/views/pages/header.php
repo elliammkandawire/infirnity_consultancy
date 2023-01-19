@@ -63,9 +63,9 @@
                         </ul>
                         <nav class="tg-addnav tg-themecolor">
                             <ul>
-                                <li><a href="#">careers</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">terms &amp; contions</a></li>
+                                <li><a target="_blank" href="https://infinityconsultancy.co:2083/">Cpanel</a></li>
+                                <li><a target="_blank" href="<?php echo base_url() ?>login">Login</a></li>
+                                <li><a target="_blank" href="https://infinityconsultancy.co:2096/">Email</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -77,8 +77,8 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <strong class="tg-logo">
-<!--                            <a href="--><?php //echo base_url() ?><!--"><img src="images/--><?php ////echo $company_details->logo  ?><!--" alt="--><?php ////echo $company_details->shortname ?><!--"> --><?php //echo $company_details->shortname ?><!--</a>-->
-                            <a href="<?php echo base_url() ?>"><?php echo $company_details->shortname ?></a>
+                            <a href="<?php echo base_url() ?>"><img style="object-fit: cover; height: 70px;" src="images/<?php echo $company_details->logo  ?>" alt="<?php echo $company_details->shortname ?>"></a>
+<!--                            <a href="--><?php //echo base_url() ?><!--">--><?php //echo $company_details->shortname ?><!--</a>-->
                         </strong>
                         <nav id="tg-nav" class="tg-nav">
                             <div class="navbar-header">
